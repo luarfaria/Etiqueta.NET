@@ -15,3 +15,21 @@ The basic steps to getting labels are:
 3. Export label using ExportPDF Method.
 
 <a href="http://www.nuget.org/packages/Etiqueta.NET/" target="_blank">Click here to download it from nuget package</a>
+
+# Samples
+
+Letter
+
+CorreiosLabel.LabelType.CARTA
+
+```C#
+var etiqueta = new CorreiosLabel("ME", "0001", "005", "123456");
+
+var sender = new Sender("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+var receiver = new Receiver("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+etiqueta.Generate("JH980121092BR", sender, receiver, CorreiosLabel.LabelType.CARTA, @"C:\Users\luar.faria\Documents\logo.png");
+            
+var caminho = etiqueta.ExportPDF();
+```
