@@ -5,6 +5,8 @@ Supported send types: Letter, PAC, Sedex.
 
 To use this library to generate labels is necessary to have a contract with correios to use send-type PAC or SEDEX. Is necessary send post card, origin agency and administrative code. To use letter send-type is not necessary have a correios contract.
 
+To know how to do a contract with correios access the address http://www.correios.com.br/sobre-correios/fale-com-os-correios/contatos-comerciais
+
 # Quick Start
 The basic steps to getting labels are:
 
