@@ -1,5 +1,4 @@
-**Welcome to the Etiqueta.NET wiki!**
-
+# Etiqueta.NET
 Etiqueta.NET is a library to generate labels homologated by correios, you can easily export and print massive quantity of labels to send packages or letters to correios.
 
 Supported send types: Letter, PAC, Sedex.
