@@ -14,4 +14,4 @@ The basic steps to getting labels are:
 2. Generate label using Generate Method.
 3. Export label using ExportPDF Method.
 
-<a href="nuget.org/packages/Etiqueta.NET/" target="_blank">Click here to download it from nuget package</a>
+<a href="http://www.nuget.org/packages/Etiqueta.NET/" target="_blank">Click here to download it from nuget package</a>
