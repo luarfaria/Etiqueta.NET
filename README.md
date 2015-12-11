@@ -33,3 +33,33 @@ etiqueta.Generate("JH980121092BR", sender, receiver, CorreiosLabel.LabelType.CAR
             
 var caminho = etiqueta.ExportPDF();
 ```
+PAC
+
+CorreiosLabel.LabelType.PAC
+
+```C#
+var etiqueta = new CorreiosLabel("ME", "0001", "005", "123456");
+
+var sender = new Sender("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+var receiver = new Receiver("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+etiqueta.Generate("JH980121092BR", sender, receiver, CorreiosLabel.LabelType.PAC, @"C:\Users\luar.faria\Documents\logo.png");
+            
+var caminho = etiqueta.ExportPDF();
+```
+SEDEX
+
+CorreiosLabel.LabelType.SEDEX
+
+```C#
+var etiqueta = new CorreiosLabel("ME", "0001", "005", "123456");
+
+var sender = new Sender("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+var receiver = new Receiver("Luar Faria", "QMS 17 casa 2 Cond. Mini chacaras", "sobradinho", "Setor de mansões", "73062708", "Brasilia", "DF");
+
+etiqueta.Generate("JH980121092BR", sender, receiver, CorreiosLabel.LabelType.SEDEX, @"C:\Users\luar.faria\Documents\logo.png");
+            
+var caminho = etiqueta.ExportPDF();
+```
